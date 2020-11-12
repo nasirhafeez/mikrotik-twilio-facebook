@@ -1,0 +1,206 @@
+/*
+    *{ border: 1px solid red; }
+*/
+
+body {
+    color: black;
+    font-family: "Ariel", sans-serif;
+}
+
+.bg {
+    position:relative;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-size: cover;
+}
+
+#logo {
+    padding-top: 3px;
+    width: 30%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#devices {
+    text-align: center;
+    margin: 0;
+}
+
+#handle {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+#thanks {
+    text-align: center;
+    margin: 0;
+    margin-top: 15px;
+}
+
+#customers {
+    text-align: center;
+    margin: 0;
+}
+
+#social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logintext {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+  }
+  
+/* facebook button class*/
+.facebookBtn{
+background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+font-family: "FontAwesome";
+content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+color: #4060A5;
+background: #fff;
+}
+
+#powered {
+    text-align: center;
+    margin: 0;
+}
+
+#powered_handle {
+    text-align: center;
+    margin: 0;
+    margin-top: 220px;
+}
+
+#powered_thanks {
+    text-align: center;
+    margin: 0;
+    margin-top: 220px;
+}
+
+#powered_welcome {
+    text-align: center;
+    margin: 0;
+    margin-top: 210px;
+}
+
+#copyright {
+    text-align: center;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: underline;           
+}
+
+a:hover {
+    color: black;
+}
+
+/* Media Query for Desktops */
+
+@media only screen and (min-width: 768px) {
+    html {
+        overflow: hidden;
+    }
+    .bg {
+        position: absolute;
+        background-size: 100% 100%;
+    }
+    #logo {
+        max-width: 10%;
+    }
+    #login {
+        margin-top: 20px;
+    }
+    #powered {
+        margin-top: 0px;
+    }
+    #powered_handle {
+        margin-top: 275px;
+    }
+    #powered_thanks {
+        margin-top: 275px;
+    }
+    #powered_welcome {
+        margin-top: 270px;
+    }
+    #logintext {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Media Query for iPads */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    #powered {
+        margin-top: 100px;
+    }
+    #powered_handle {
+        margin-top: 420px;
+    }
+    #powered_thanks {
+        margin-top: 420px;
+    }
+    #powered_welcome {
+        margin-top: 410px;
+    }
+    #logo {
+        max-width: 20%;
+    }
+    #logintext {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}

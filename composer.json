@@ -1,0 +1,7 @@
+{
+    "require": {
+        "fortawesome/font-awesome": "^5.3",
+        "facebook/graph-sdk": "*",
+        "vlucas/phpdotenv": "^5"
+    }
+}
