@@ -1,4 +1,4 @@
-# External Captive Portal for Mikrotik with Facebook Login
+# Mikrotik Captive Portal with Twilio Verify and Facebook Login
 
 The captive portal web server can be setup using the instructions given [here](https://gist.github.com/nasirhafeez/4e1c2c5536d313db96e2b4ce4b3b269e). The following actions are required to use the code given in this repo:
  
