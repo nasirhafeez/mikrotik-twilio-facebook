@@ -17,9 +17,9 @@ session_start();
 <body>
 	<div class="bg">
 
-      <figure id="logo">
-        <img src="logo.png">
-      </figure>
+    <figure id="logo">
+      <img src="logo.png">
+    </figure>
 
  		<div id="result" class="content is-size-6">Great! Your code has been approved!</div>
 		<div id="devices" class="content is-size-6">You'll be automatically redirected</div>

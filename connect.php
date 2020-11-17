@@ -106,11 +106,9 @@ mysqli_close($con);
 <body>
 	<div class="bg">
 
-    <section id="logo" class="section">
-      <figure>
-        <img src="logo.png">
-      </figure>
-    </section>
+    <figure id="logo">
+      <img src="logo.png">
+    </figure>
 
 		<div id="handle" class="content is-size-6">Please wait, you are being </div>
 		<div id="devices" class="content is-size-6">authorized on WiFi</div>

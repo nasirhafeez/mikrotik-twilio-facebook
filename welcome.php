@@ -22,11 +22,9 @@ Printing a welcome message for the user
 <body>
 	<div class="bg">
 
-    <section id="logo" class="section">
-      <figure>
-        <img src="logo.png">
-      </figure>
-    </section>
+    <figure id="logo">
+      <img src="logo.png">
+    </figure>
 
 		<div id="devices" class="content is-size-6">Welcome, <?php echo htmlspecialchars($_SESSION["fname"]);?>!</div>
 		<div id="devices" class="content is-size-6">You'll be automatically authorized</div>
