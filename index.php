@@ -49,7 +49,6 @@ if ($result->num_rows >= 1) {
 }
 
 ?>
-
 <!doctype html>
 <html>
 <head>
@@ -61,7 +60,7 @@ if ($result->num_rows >= 1) {
   <script defer src="vendor\fortawesome\font-awesome\js\all.js"></script>
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="bg">
@@ -71,6 +70,8 @@ if ($result->num_rows >= 1) {
     </figure>
 
     <div id="login" class="content is-size-4 has-text-weight-bold">Login for Free Wi-Fi</div>
+
+    <div id="gap" class="content is-size-6"></div>
 
     <form id="verify" method="post" action="verify.php">
         <div class="centered_elements">

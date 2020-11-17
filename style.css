@@ -27,6 +27,23 @@ body {
     margin-right: auto;
 }
 
+#verify {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gap {
+    margin-top: 5px;
+}
+
+.centered_elements {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form_login {
     display: flex;
     flex-wrap: wrap;
@@ -123,6 +140,7 @@ background: #fff;
 #powered {
     text-align: center;
     margin: 0;
+    margin-top: 100px;
 }
 
 #powered_handle {
@@ -174,7 +192,7 @@ a:hover {
         margin-top: 20px;
     }
     #powered {
-        margin-top: 0px;
+        margin-top: 150px;
     }
     #powered_handle {
         margin-top: 275px;
@@ -200,7 +218,7 @@ a:hover {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
     #powered {
-        margin-top: 100px;
+        margin-top: 300px;
     }
     #powered_handle {
         margin-top: 420px;
