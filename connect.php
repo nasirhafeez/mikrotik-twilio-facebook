@@ -8,6 +8,7 @@ $ip = $_SESSION["ip"];
 $linkorig = "https://portal.astiisb.com/thankyou.htm";
 $linkloginonly = $_SESSION["linkloginonly"];
 $method = $_SESSION["method"];
+$phone = $_SESSION['phone'];
 
 $last_updated = date("Y-m-d H:i:s");
 
@@ -42,6 +43,7 @@ if($_SESSION["user_type"]=="new" && $_SESSION["method"]=="Form"){
   mysqli_query($con, "
   CREATE TABLE IF NOT EXISTS `$table_name` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
+    `phone` varchar(45) NOT NULL,
     `firstname` varchar(45) NOT NULL,
     `lastname` varchar(45) NOT NULL,
     `email` varchar(45) NOT NULL,
@@ -52,7 +54,7 @@ if($_SESSION["user_type"]=="new" && $_SESSION["method"]=="Form"){
     UNIQUE KEY `id_UNIQUE` (`id`)
   )");
 
-  mysqli_query($con,"INSERT INTO `$table_name` (firstname, lastname, email, mac, method, last_updated) VALUES ('$fname', '$lname', '$email', '$mac', '$method', '$last_updated')");
+  mysqli_query($con,"INSERT INTO `$table_name` (phone, firstname, lastname, email, mac, method, last_updated) VALUES ('$phone', '$fname', '$lname', '$email', '$mac', '$method', '$last_updated')");
 
 }
 elseif($_SESSION["user_type"]=="new" && $_SESSION["method"]=="Facebook"){
@@ -64,6 +66,7 @@ elseif($_SESSION["user_type"]=="new" && $_SESSION["method"]=="Facebook"){
   mysqli_query($con, "
   CREATE TABLE IF NOT EXISTS `$table_name` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
+    `phone` varchar(45) NOT NULL,
     `firstname` varchar(45) NOT NULL,
     `lastname` varchar(45) NOT NULL,
     `email` varchar(45) NOT NULL,
@@ -74,7 +77,7 @@ elseif($_SESSION["user_type"]=="new" && $_SESSION["method"]=="Facebook"){
     UNIQUE KEY `id_UNIQUE` (`id`)
   )");
 
-  mysqli_query($con,"INSERT INTO `$table_name` (firstname, lastname, email, mac, method, last_updated) VALUES ('$fname', '$lname', '$email', '$mac', '$method', '$last_updated')");
+  mysqli_query($con,"INSERT INTO `$table_name` (phone, firstname, lastname, email, mac, method, last_updated) VALUES ('$phone', '$fname', '$lname', '$email', '$mac', '$method', '$last_updated')");
 
 }
 else {
@@ -82,7 +85,7 @@ else {
   $lname=$_SESSION['lname'];
   $email=$_SESSION['email'];
 
-  mysqli_query($con,"INSERT INTO `$table_name` (firstname, lastname, email, mac, method, last_updated) VALUES ('$fname', '$lname', '$email', '$mac', '$method', '$last_updated')");
+  mysqli_query($con,"INSERT INTO `$table_name` (phone, firstname, lastname, email, mac, method, last_updated) VALUES ('$phone', '$fname', '$lname', '$email', '$mac', '$method', '$last_updated')");
 }
 
 mysqli_close($con);
