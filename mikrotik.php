@@ -84,7 +84,7 @@ $loginUrl    = $helper->getLoginUrl($callBackUrl,$scope);
     </div>
     <br>
 
-    <div id="powered" class="content is-size-6">Powered by Astiisb</div>
+    <div id="powered_mikrotik" class="content is-size-6">Powered by Astiisb</div>
     <div id="copyright" class="content is-size-6">(C) Copyright 2020</div>
 
   </div>
