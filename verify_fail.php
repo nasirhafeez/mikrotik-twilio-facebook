@@ -12,7 +12,7 @@ session_start();
   <meta http-equiv="refresh" content="5;url=index.php" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 	<div class="bg">
