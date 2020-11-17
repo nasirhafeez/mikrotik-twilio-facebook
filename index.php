@@ -35,10 +35,10 @@ $result = mysqli_query($con, "SELECT * FROM `$table_name` WHERE mac='$_SESSION[m
 if ($result->num_rows >= 1) {
   $row = mysqli_fetch_array($result);
 
-  $_SESSION["fname"] = $row[1];
-  $_SESSION["lname"] = $row[2];
-  $_SESSION["email"] = $row[3];
-  $_SESSION["method"] = $row[5];
+  $_SESSION["fname"] = $row[2];
+  $_SESSION["lname"] = $row[3];
+  $_SESSION["email"] = $row[4];
+  $_SESSION["method"] = $row[6];
 
   mysqli_close($con);
 
