@@ -79,6 +79,17 @@ body {
     margin-top: 10px;
 }
 
+#codeError {
+    display: none;
+    margin-bottom: 10px;			   
+}
+
+#result {
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+}
+
 #thanks {
     text-align: center;
     margin: 0;
@@ -143,6 +154,18 @@ background: #fff;
     margin-top: 100px;
 }
 
+#powered_verify {
+    text-align: center;
+    margin: 0;
+    margin-top: 100px;
+}
+
+#powered_verifypass {
+    text-align: center;
+    margin: 0;
+    margin-top: 160px;
+}
+
 #powered_handle {
     text-align: center;
     margin: 0;
@@ -194,6 +217,12 @@ a:hover {
     #powered {
         margin-top: 150px;
     }
+    #powered_verify {
+        margin-top: 120px;
+    }
+    #powered_verifypass {
+        margin-top: 220px;
+    }
     #powered_handle {
         margin-top: 275px;
     }
@@ -219,6 +248,12 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
     #powered {
         margin-top: 300px;
+    }
+    #powered_verify {
+        margin-top: 270px;
+    }
+    #powered_verifypass {
+        margin-top: 370px;
     }
     #powered_handle {
         margin-top: 420px;

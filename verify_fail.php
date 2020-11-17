@@ -17,11 +17,9 @@ session_start();
 <body>
 	<div class="bg">
 
-    <section id="logo" class="section">
-      <figure>
-        <img src="logo.png">
-      </figure>
-    </section>
+    <figure id="logo">
+      <img src="logo.png">
+    </figure>
 
 		<div id="result" class="content is-size-6">Sorry! The code you entered</div>
 		<div id="devices" class="content is-size-6">is not correct. You'll shortly be</div>

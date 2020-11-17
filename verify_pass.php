@@ -12,16 +12,14 @@ session_start();
   <meta http-equiv="refresh" content="5;url=mikrotik.php" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 	<div class="bg">
 
-    <section id="logo" class="section">
-      <figure>
+      <figure id="logo">
         <img src="logo.png">
       </figure>
-    </section>
 
  		<div id="result" class="content is-size-6">Great! Your code has been approved!</div>
 		<div id="devices" class="content is-size-6">You'll be automatically redirected</div>

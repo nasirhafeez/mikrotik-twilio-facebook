@@ -37,18 +37,16 @@ $verification = $twilio->verify->v2->services($serviceid)
   <script defer src="vendor\fortawesome\font-awesome\js\all.js"></script>
   <link rel="icon" type="image/png" href="favicomatic\favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="favicomatic\favicon-16x16.png" sizes="16x16" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="bg">
 
-    <section id="logo" class="section">
-      <figure>
+      <figure id="logo">
         <img src="logo.png">
       </figure>
-    </section>
 
-    <form id="login_success" class="wifi_form" method="post" action="result.php" onsubmit="return codeCheck()">
+    <form class="wifi_form" method="post" action="result.php" onsubmit="return codeCheck()">
 
       <div id="devices" class="content is-size-6">Please enter the 6 digit code</div>
       <div id="devices" class="content is-size-6">received on your provided number</div>
